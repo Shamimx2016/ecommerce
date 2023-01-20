@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:ecommerce/Widgets/app_bar_bg_color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../Widgets/custom_container.dart';
 
@@ -15,16 +14,8 @@ class CustomerHomePage extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [Colors.yellow, Colors.white],
-              ),
-            ),
-          ),
-          title: CustomContainer(),
+          flexibleSpace: const AppBarBgColor(),
+          title: const CustomContainer(),
           bottom: const TabBar(
             isScrollable: true,
             indicatorColor: Colors.yellow,

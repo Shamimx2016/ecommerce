@@ -1,3 +1,4 @@
+import 'package:ecommerce/Views/screen/Catagory/catagory_page.dart';
 import 'package:ecommerce/Views/screen/Customer%20Home%20Page/customer_home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Widget> _tabs = [
     CustomerHomePage(),
-    Center(
-      child: Text("Catagory Page"),
-    ),
+    CatagoryPage(),
     Center(
       child: Text("Shopping Page"),
     ),
